@@ -10,5 +10,8 @@
     "JavaScript"
   ],
   "author": "Raphael Pinheiro",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^30.4.2"
+  }
 }
