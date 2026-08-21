@@ -1,0 +1,255 @@
+/* Box-sizing */
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+
+body,
+h1,
+h2,
+h3,
+p,
+menu {
+  margin: 0;
+}
+
+/* Remove default padding */
+
+menu {
+  padding: 0;
+}
+
+/* Remove list style */
+
+menu[role="list"] {
+  list-style: none;
+}
+
+/* Base */
+
+body {
+  min-height: 100vh;
+}
+
+/* Typograph */
+
+body {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  font-weight: 400;
+}
+
+/* Font-family */
+
+.ff-serif {
+  font-family: "Bellefair", serif;
+}
+
+.ff-sans-cond {
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.ff-sans-normal {
+  font-family: "Barlow", sans-serif;
+}
+
+/* Font-size */
+
+.fs-800 {
+  font-size: clamp(1.476rem, 4vh + 1rem, 5rem);
+}
+
+.fs-700 {
+  font-size: 1.383rem;
+}
+
+.fs-600 {
+  font-size: 1.296rem;
+}
+
+.fs-500 {
+  font-size: 1.215rem;
+}
+
+.fs-400 {
+  font-size: 1.138rem;
+}
+
+.fs-300 {
+  font-size: 1.067rem;
+}
+
+.fs-200 {
+  font-size: 1rem;
+}
+
+.fs-100 {
+  font-size: 0.937rem;
+}
+
+/* Line-height */
+
+.fs-800,
+.fs-700,
+.fs-600,
+.fs-500 {
+  line-height: 1.1;
+}
+
+/* Letter-spacing */
+
+.ls-4 {
+  letter-spacing: 0.25em;
+}
+
+.ls-2 {
+  letter-spacing: 0.125em;
+}
+
+.ls-0 {
+  letter-spacing: 0em;
+}
+
+/* Uppercase and decoration */
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Number-title */
+
+.number-title {
+  font-weight: 700;
+  margin-right: 0.5em;
+}
+
+/* Background-color */
+
+.bg-purpleDark {
+  background-color: #2e294e;
+}
+
+.bg-purple {
+  background-color: #820263;
+}
+
+.bg-rose {
+  background-color: #d90368;
+}
+
+.bg-cream {
+  background-color: #eadeda;
+}
+
+.bg-yellow {
+  background-color: #ffd400;
+}
+
+/* Colors */
+
+.tp-cream {
+  color: #eadeda;
+}
+
+/* Tools */
+
+.d-block {
+  display: block;
+}
+
+.d-grid {
+  display: grid;
+}
+
+.padding {
+  padding: 0 1.5rem;
+}
+
+.margin {
+  margin: 1.5rem 0;
+}
+
+/* Layout */
+
+.l-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+.l-header {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.l-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.l-main__paragraph {
+  hyphens: auto;
+  overflow-wrap: break-word;
+  text-align: justify;
+}
+
+.l-main__card {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+/* Components */
+
+/* Nav */
+
+.c-nav {
+  margin: auto 0;
+}
+
+.c-nav__menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.c-nav__link {
+  border-bottom: 3px solid transparent;
+  transition: all 350ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.c-nav__link:hover {
+  border-bottom: 3px solid #eadeda;
+  color: #ffd400;
+}
+
+/* Button */
+
+.c-button {
+  display: inline-block;
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px #d90368;
+  border: none;
+  cursor: pointer;
+  padding: 2em 4em;
+  transition: all 350ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.c-button:hover {
+  background-color: #d90368;
+  box-shadow: 0px 0px 15px transparent;
+}
